@@ -12,9 +12,16 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="{% static "../static/css/base.css" %}">
     <title>Pollster{% block title %}{% endblock %}</title>
 </head>
+<style>
+    body {
+        background-image: url("../static/img/blue.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+</style>
 <body>
 <!-- NavBar -->
 {% include 'partials/_navbar.html' %}
